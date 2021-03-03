@@ -1,0 +1,536 @@
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+
+.header {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+.header__desktop {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  position: absolute;
+}
+.header__mobile {
+  display: none;
+}
+.header__head {
+  display: flex;
+  position: absolute;
+}
+.header__head-icon {
+  width: 6rem;
+  height: 3rem;
+  margin: 2rem 30rem 0 6rem;
+}
+.header__head .list {
+  display: flex;
+  margin: 3rem 0rem 0 6rem;
+}
+.header__head .list__item {
+  color: white;
+  margin-left: 2rem;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.header__head .list__item:hover {
+  border-bottom: 2px solid white;
+}
+.header__head .navbar {
+  display: none;
+}
+.header .title {
+  width: 30rem;
+  height: 16rem;
+  color: white;
+  position: absolute;
+  margin: 9rem 0 0 10rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 4rem;
+  border: 1px solid white;
+  padding: 2rem 3rem 0 2rem;
+}
+
+.interactive {
+  display: flex;
+}
+.interactive__img {
+  margin: 6rem 0 0 10rem;
+  width: 40rem;
+  height: 25rem;
+  object-fit: cover;
+}
+.interactive__content {
+  width: 30rem;
+  height: 15rem;
+  margin: 16rem 0 0 -9rem;
+  background-color: white;
+  padding: 5rem 2rem 2rem 3rem;
+}
+.interactive__content-title {
+  font-size: 2.7rem;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+.interactive__content-info {
+  color: #8c8c8c;
+  font-size: 0.9rem;
+}
+
+.creation {
+  margin: 7rem 0 0 0;
+}
+.creation__head {
+  display: flex;
+  align-items: center;
+  margin-left: 10rem;
+}
+.creation__head-name {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.creation__head-button {
+  color: black;
+  margin-left: 37.25rem;
+  background-color: white;
+  border: 1px solid black;
+  padding: 0.4rem 1.3rem;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.creation__head-button:hover {
+  background-color: black;
+  color: white;
+}
+.creation__grid {
+  margin: 3rem 0 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4, 0.2FR);
+  grid-template-rows: repeat(2, 0.5FR);
+  grid-gap: 0.5rem 0.5rem;
+}
+.creation__grid-item {
+  width: 14rem;
+  height: 25rem;
+  cursor: pointer;
+}
+.creation__grid-item:hover {
+  opacity: 0.4;
+}
+.creation .deep {
+  transform: translate(2rem, -31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .night {
+  transform: translate(2rem, -31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .soccer {
+  transform: translate(2rem, -31rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .grid {
+  transform: translate(2rem, -31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .above {
+  transform: translate(2rem, -10rem);
+  font-size: 1.8rem;
+  max-width: 8rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .pocket {
+  transform: translate(2rem, -10rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .curiosity {
+  transform: translate(2rem, -10rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+.creation .fisheye {
+  transform: translate(2rem, -10rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: #e4e5d9;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  overflow-x: hidden;
+}
+.footer .logo {
+  width: 5rem;
+  height: 1.5rem;
+  transform: translate(10rem, 1rem);
+}
+.footer .list {
+  display: flex;
+  flex-direction: row;
+  transform: translate(10rem, 2rem);
+  margin-left: -1rem;
+}
+.footer .list__item {
+  color: white;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.footer .list__item:hover {
+  border-bottom: 2px solid white;
+}
+.footer .social {
+  display: flex;
+  flex-direction: row;
+  transform: translate(61rem, -1rem);
+}
+.footer .social__item {
+  cursor: pointer;
+}
+.footer .social__item .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 1rem;
+  transition: all 0.25s linear;
+}
+.footer .social__item .icon:hover {
+  transform: scale(1.1);
+}
+.footer .cont {
+  color: white;
+  transform: translate(51rem, -0.1rem);
+  font-size: 0.8rem;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+  }
+  .header__mobile {
+    display: none;
+  }
+  .header__desktop {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    position: absolute;
+  }
+  .header__head {
+    display: flex;
+    position: absolute;
+  }
+  .header__head-icon {
+    width: 5rem;
+    height: 2rem;
+    margin: 3rem 30rem 0 2rem;
+  }
+  .header__head .list {
+    display: none;
+  }
+  .header__head .navbar {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+  }
+  .header .title {
+    width: 80%;
+    height: 16rem;
+    color: white;
+    position: absolute;
+    margin: 9rem 0 0 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 3rem;
+    border: 1px solid white;
+    padding: 2rem 3rem 0 0rem;
+  }
+
+  .interactive {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    text-align: center;
+  }
+  .interactive__img {
+    margin: 6rem 0 0 1rem;
+    width: 90%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  .interactive__content {
+    width: 20rem;
+    height: 15rem;
+    margin: 0rem;
+    padding: 3rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .interactive__content-title {
+    font-size: 2.3rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin-bottom: 1rem;
+  }
+  .interactive__content-info {
+    color: #8c8c8c;
+    font-size: 0.8rem;
+    max-width: 14rem;
+  }
+
+  .creation {
+    margin: 5rem 0 0 0;
+  }
+  .creation__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  .creation__head-name {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .creation__head-button {
+    color: black;
+    margin: 1rem 0 0 0rem;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0.4rem 1.3rem;
+    cursor: pointer;
+    transition: all 0.25s linear;
+  }
+  .creation__head-button:hover {
+    background-color: black;
+    color: white;
+  }
+  .creation__grid {
+    margin: 3rem 0 -20rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 0.5rem 0.5rem;
+  }
+  .creation__grid-item {
+    width: 95%;
+    height: 10rem;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .creation__grid-item:hover {
+    opacity: 0.4;
+  }
+  .creation .deep {
+    transform: translate(2rem, -79rem);
+    font-size: 1.8rem;
+    max-width: 4rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .night {
+    transform: translate(2rem, -73rem);
+    font-size: 1.8rem;
+    max-width: 4rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .soccer {
+    transform: translate(2rem, -67rem);
+    font-size: 1.8rem;
+    max-width: 7rem;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .grid {
+    transform: translate(2rem, -61rem);
+    font-size: 1.8rem;
+    max-width: 4rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .above {
+    transform: translate(2rem, -54rem);
+    font-size: 1.8rem;
+    max-width: 8rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .pocket {
+    transform: translate(2rem, -47rem);
+    font-size: 1.8rem;
+    max-width: 4rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .curiosity {
+    transform: translate(2rem, -41rem);
+    font-size: 1.8rem;
+    max-width: 4rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .creation .fisheye {
+    transform: translate(2rem, -34rem);
+    font-size: 1.8rem;
+    max-width: 7rem;
+    color: #e4e5d9;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 18rem;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .logo {
+    width: 5rem;
+    height: 1.5rem;
+    transform: translate(0rem, 0rem);
+  }
+  .footer .list {
+    display: flex;
+    flex-direction: column;
+    transform: translate(0rem, 0rem);
+    margin-left: -1rem;
+  }
+  .footer .list__item {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    transition: all 0.25s linear;
+  }
+  .footer .list__item:hover {
+    border-bottom: 2px solid white;
+  }
+  .footer .social {
+    display: flex;
+    flex-direction: row;
+    transform: translate(1rem, 0rem);
+  }
+  .footer .social__item {
+    cursor: pointer;
+  }
+  .footer .social__item .icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+    transition: all 0.25s linear;
+  }
+  .footer .social__item .icon:hover {
+    transform: scale(1.1);
+  }
+  .footer .cont {
+    color: white;
+    transform: translate(0rem, 0rem);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    background-color: black;
+    position: relative;
+  }
+  .menu .logo {
+    width: 8rem;
+    height: 2rem;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    cursor: pointer;
+  }
+  .menu .remove {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    cursor: pointer;
+  }
+  .menu .list {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translate(0%, -30%);
+    flex-direction: column;
+    margin: 3rem 0rem 0 6rem;
+  }
+  .menu .list__item {
+    color: white;
+    margin-left: 0rem;
+    width: 6rem;
+    height: 2rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: all 0.25s linear;
+  }
+  .menu .list__item:hover {
+    color: #4acfc9;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

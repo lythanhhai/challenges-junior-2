@@ -1,0 +1,673 @@
+// $VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+// $DesaturatedDarkBlue: hsl(214, 17%, 51%);
+// $GrayishBlue: hsl(212, 23%, 69%);
+// $LightGrayishBlue: hsl(210, 46%, 95%);
+// Primary
+
+$DarkBlue: hsl(233, 26%, 24%);
+$LimeGreen: hsl(136, 65%, 51%);
+$BrightCyan: hsl(192, 70%, 51%);
+//Neutral
+
+$GrayishBlue: hsl(233, 8%, 62%);
+$LightGrayishBlue: hsl(220, 16%, 96%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin flexCen($align, $just, $wrap, $direct) {
+  display: flex;
+  align-items: $align;
+  justify-content: $just;
+  flex-wrap: $wrap;
+  flex-direction: $direct;
+}
+
+.header
+{
+ 
+ @include size(100%,30rem);
+ position: relative;
+  &__desktop
+  {
+    @include size(100%,30rem);
+    object-fit: cover;
+    position: absolute;
+
+  }
+  &__mobile
+  {
+    display: none;
+     
+  }
+  &__head
+  {
+    display: flex;
+    position: absolute;
+    &-icon
+    {
+      @include size(6rem,3rem);
+      margin:2rem 30rem 0 6rem;
+    }
+    .list
+  {
+    display: flex;
+    margin:3rem 0rem 0 6rem;
+    &__item
+    {
+      color: white;
+      margin-left: 2rem;
+      cursor: pointer;
+      transition: all 0.25s linear;
+      &:hover
+      {
+         border-bottom: 2px solid white;
+      }
+    }
+  }
+  .navbar
+  {
+    display: none;
+  }
+  }
+  .title
+  {
+    @include size(30rem,16rem);
+    color:white;
+    position: absolute;
+    margin:9rem 0 0 10rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    border:1px solid white;
+    padding: 2rem 3rem 0 2rem;
+  }
+  
+}
+
+.interactive
+{
+  display: flex;
+  &__img
+  {
+    margin:6rem 0 0 10rem;
+    @include size(40rem,25rem);
+    object-fit: cover;
+  }
+  &__content
+  {
+    @include size(30rem,15rem);
+    margin:16rem 0 0 -9rem;
+    background-color: white;
+    padding:5rem 2rem 2rem 3rem;
+    &-title
+    {
+      font-size: 2.7rem;
+      font-family: 'Josefin Sans', sans-serif;
+      margin-bottom: 1rem;
+    }
+    &-info
+    {
+      color:hsl(0, 0%, 55%);
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.creation
+{
+  margin:7rem 0 0 0;
+  &__head
+  {
+    display: flex;
+    align-items: center;
+    margin-left: 10rem;
+    &-name
+    {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    &-button
+    {
+      color: black;
+     margin-left: 37.25rem;
+     background-color: white;
+     border:1px solid black;
+     padding:0.4rem 1.3rem;
+     cursor: pointer;
+     transition: all 0.25s linear;
+     &:hover
+     {
+      background-color: black;
+      color:white;
+     }
+    }
+  }
+  &__grid
+  {
+    margin:3rem 0 5rem 10rem;
+    // @include size(73%,50rem);
+    display: grid;
+    //grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,0.2FR);
+    grid-template-rows: repeat(2,0.5FR);
+    grid-gap: 0.5rem 0.5rem;
+    &-item
+    {
+      @include size(14rem,25rem);
+      cursor: pointer;
+      &:hover
+      {
+        opacity: 0.4;
+        
+      }
+    }
+    
+    
+   }
+.deep
+{
+  transform: translate(2rem,-31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.night
+{
+  transform: translate(2rem,-31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.soccer
+{
+  transform: translate(2rem,-31rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+.grid
+{
+  transform: translate(2rem,-31rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.above
+{
+  transform: translate(2rem,-10rem);
+  font-size: 1.8rem;
+  max-width: 8rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.pocket
+{
+  transform: translate(2rem,-10rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.curiosity
+{
+  transform: translate(2rem,-10rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.fisheye
+{
+  transform: translate(2rem,-10rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+}
+
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  @include size(100%,6rem);
+  background-color: black;
+  overflow-x: hidden;
+ .logo
+ {
+   @include size(5rem,1.5rem);
+   transform: translate(10rem,1rem);
+ }
+ .list
+ {
+   display: flex;
+   flex-direction: row;
+   transform: translate(10rem,2rem);
+   margin-left: -1rem;
+   &__item
+   {
+     color: white;
+     margin-left: 1rem;
+     font-size: 0.8rem;
+     cursor: pointer;
+     transition: all 0.25s linear;
+     &:hover
+      {
+         border-bottom: 2px solid white;
+      }
+   }
+ }
+ .social
+ {
+   display: flex;
+   flex-direction: row;
+   transform: translate(61rem,-1rem);
+   &__item
+   {
+     cursor: pointer;
+     .icon
+     {
+
+       @include size(1rem,1rem);
+       margin-right: 1rem;
+       transition: all 0.25s linear;
+       &:hover
+       {
+         transform: scale(1.1);
+       }
+     }
+   }
+ }
+ .cont
+ {
+color: white;
+transform: translate(51rem,-0.1rem);
+font-size: 0.8rem;
+ }
+}
+.menu
+{
+  display: none;
+}
+@media screen and (max-width:767px)
+{
+  body
+  {
+    overflow-x: hidden;
+  }
+  .header
+{
+ 
+ @include size(100%,30rem);
+ position: relative;
+  &__mobile
+  {
+    // @include size(100%,30rem);
+    // object-fit: cover;
+    // position: absolute;
+    display: none;
+  }
+  &__desktop
+  {
+    @include size(100%,30rem);
+    object-fit: cover;
+    position: absolute;
+   // display: none;
+   
+  }
+  
+  &__head
+  {
+    display: flex;
+    position: absolute;
+    &-icon
+    {
+      @include size(5rem,2rem);
+      margin:3rem 30rem 0 2rem;
+    }
+    .list
+  {
+    // display: flex;
+    // margin:3rem 0rem 0 6rem;
+    // &__item
+    // {
+    //   color: white;
+    //   margin-left: 2rem;
+    //   cursor: pointer;
+    //   transition: all 0.25s linear;
+    //   &:hover
+    //   {
+    //      border-bottom: 2px solid white;
+    //   }
+    
+    // }
+    display: none;
+  }
+  .navbar
+  {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+  }
+  }
+  .title
+  {
+    @include size(80%,16rem);
+    color:white;
+    position: absolute;
+    margin:9rem 0 0 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    border:1px solid white;
+    padding: 2rem 3rem 0 0rem;
+  }
+  
+}
+
+.interactive
+{
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  text-align: center;
+  &__img
+  {
+    margin:6rem 0 0 1rem;
+    @include size(90%,12rem);
+    object-fit: cover;
+
+  }
+  &__content
+  {
+    @include size(20rem,15rem);
+    margin:0rem;
+    padding:3rem 0rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-evenly;
+    align-items: center;
+    &-title
+    {
+      font-size: 2.3rem;
+      font-family: 'Josefin Sans', sans-serif;
+      margin-bottom: 1rem;
+
+    }
+    &-info
+    {
+      color:hsl(0, 0%, 55%);
+      font-size: 0.8rem;
+      max-width: 14rem;
+      // background-color: red;
+
+
+    }
+  }
+}
+
+.creation
+{
+  margin:5rem 0 0 0;
+  &__head
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    &-name
+    {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+    &-button
+    {
+      color: black;
+     margin:1rem 0 0 0rem;
+     background-color: white;
+     border:1px solid black;
+     padding:0.4rem 1.3rem;
+     cursor: pointer;
+     transition: all 0.25s linear;
+     &:hover
+     {
+      background-color: black;
+      color:white;
+     }
+    }
+  }
+  &__grid
+  {
+    margin:3rem 0 -20rem 1rem;
+    // @include size(73%,50rem);
+    display: grid;
+    //grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: 0.5rem 0.5rem;
+    &-item
+    {
+      @include size(95%,10rem);
+      object-fit: cover;
+      cursor: pointer;
+      &:hover
+      {
+        opacity: 0.4;
+        
+      }
+    }
+    
+    
+   }
+.deep
+{
+  transform: translate(2rem,-79rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.night
+{
+  transform: translate(2rem,-73rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.soccer
+{
+  transform: translate(2rem,-67rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Josefin Sans', sans-serif;
+  
+}
+.grid
+{
+  transform: translate(2rem,-61rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.above
+{
+  transform: translate(2rem,-54rem);
+  font-size: 1.8rem;
+  max-width: 8rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.pocket
+{
+  transform: translate(2rem,-47rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.curiosity
+{
+  transform: translate(2rem,-41rem);
+  font-size: 1.8rem;
+  max-width: 4rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+.fisheye
+{
+  transform: translate(2rem,-34rem);
+  font-size: 1.8rem;
+  max-width: 7rem;
+  color: rgb(228,229,217);
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+}
+
+.footer
+{
+  display: flex;
+  flex-direction: column;
+  @include size(100%,18rem);
+  background-color: black;
+  align-items: center;
+  justify-content: space-evenly;
+ .logo
+ {
+   @include size(5rem,1.5rem);
+
+   transform: translate(0rem,0rem);
+ }
+ .list
+ {
+   display: flex;
+   flex-direction: column;
+  //  text-align: center;
+   transform: translate(0rem,0rem);
+   margin-left: -1rem;
+   &__item
+   {
+     color: white;
+     margin-bottom: 0.5rem;
+     font-size: 0.8rem;
+     @include size(2rem,1rem);
+     cursor: pointer;
+     transition: all 0.25s linear;
+     &:hover
+      {
+         border-bottom: 2px solid white;
+      }
+   }
+ }
+ .social
+ {
+   display: flex;
+   flex-direction: row;
+   transform: translate(1rem,0rem);
+   
+   &__item
+   {
+     cursor: pointer;
+     .icon
+     {
+
+       @include size(1rem,1rem);
+       margin-right: 1rem;
+       transition: all 0.25s linear;
+       &:hover
+       {
+         transform: scale(1.1);
+       }
+     }
+   }
+ }
+ .cont
+ {
+color: white;
+transform: translate(0rem,0rem);
+font-size: 0.8rem;
+   text-align: center;
+ }
+}
+.menu
+{
+  @include size(100vw,100vh);
+  display: block;
+  background-color: black;
+  // margin-top: 3rem;
+  position: relative;
+  .logo
+  {
+    @include size(8rem,2rem);
+    position: absolute;
+    top:5%;
+    left:10%;
+    cursor: pointer;
+  }
+  .remove
+  {
+    position: absolute;
+    top:5%;
+    right:10%;
+    cursor: pointer;
+  }
+  .list
+  {
+    display: flex;
+    position: absolute;
+    top:30%;
+    left: 0%;
+    transform: translate(-0%,-30%);
+    flex-direction: column;
+    margin:3rem 0rem 0 6rem;
+    &__item
+    {
+      color: white;
+      margin-left:0rem;
+      @include size(6rem,2rem);
+      cursor: pointer;
+      font-size: 1.8rem;
+      transition: all 0.25s linear;
+      &:hover
+      {
+        //  border-bottom: 2px solid white;
+        color:rgb(74, 207, 201);
+      }
+    
+    }
+  }
+}
+}
